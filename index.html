@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/src/output.css" rel="stylesheet">
+  <title>Rock Paper Scissor</title>
+</head>
+<body class="h-screen w-full grid grid-cols-1 place-content-center bg-slate-950 text-gray-100"> 
+  <div class="grid grid-cols-1 place-items-center">
+    <small id="botScoreText" class="mb-8">AI's Score: 5</small>
+    <div id="main-interface" class=" w-full max-w-screen-sm h-96 flex items-center justify-center ">
+      <div id="interface" class="hidden grid grid-cols-1 place-items-center gap-4">
+        <div id="BotChosenMoves" class="h-32 w-32 border-2 border-purple-500 rounded-full flex items-center justify-center">AI move</div>
+        <div id="textGuide" class="text-center">
+          <p id="textGuide-p" class="text-xl"></p>
+          <span id="textGuide-span" class="text-sm text-gray-500">bot</span></div>
+        <div class="YourChosenMoves h-32 w-32 border-2 border-purple-500 rounded-full flex items-center justify-center">Player move</div>
+      </div>
+      <div id="loadingCircle" class="hidden inline-block h-14 w-14 animate-spin rounded-full border-4 border-solid border-current border-e-transparent align-[-0.125em] text-surface motion-reduce:animate-[spin_1.5s_linear_infinite] dark:text-violet-700" role="status">
+    </div>
+      <p id="selectMoveText" class="leading-[384px] text-center">Select a move to start</p>
+    </div>
+    <div class=" w-full max-w-screen-sm flex items-center justify-center gap-6 mt-10">
+      <button id="rock" class="moves text-sm h-20 w-20 border-2 border-purple-500 hover:bg-purple-950/20 transition-colors ease-in-out duration-200 rounded-full">Rock</button>
+      <button id="paper" class="moves text-sm h-20 w-20 border-2 border-orange-500 hover:bg-orange-950/20 transition-colors ease-in-out duration-200 rounded-full">Paper</button>
+      <button id="scissor" class="moves text-sm h-20 w-20 border-2 border-green-500 hover:bg-green-950/20 transition-colors ease-in-out duration-200 rounded-full">Scissor</button>
+    </div>
+    <small id="playerScoreText" class="mt-8">Your Score: 6</small>
+    <small>Built by: Kaizen改善</small>
+  </div>
+  
+  <script src="./js/main.js"></script>
+</body>
+</html>
